@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Apex Classes -->
+    <types>
+        <members>CountryService</members>
+        <members>CountryServiceTest</members>
+        <members>CountryScheduler</members>
+        <members>CountrySchedulerTest</members>
+        <members>ExternalApiConfigHelper</members>
+        <members>ExternalApiConfigHelperTest</members>
+        <members>CountryServiceMock</members>
+        <members>CountryServiceMock_Failure</members>
+        <members>MockHttpResponseGenerator</members>
+        <members>LeadCountryTriggerTest</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Apex Triggers -->
+    <types>
+        <members>LeadCountryTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Custom Objects -->
+    <types>
+        <members>Country__c</members>
+        <members>Lead</members>
+        <members>CountryAPIKey__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Custom Fields -->
+    <types>
+        <members>Country__c.Alpha2__c</members>
+        <members>Country__c.Alpha3__c</members>
+        <members>Country__c.Capital__c</members>
+        <members>Country__c.Region__c</members>
+        <members>Country__c.RegionalBlocs__c</members>
+        <members>Lead.Alpha2__c</members>
+        <members>Lead.Alpha3__c</members>
+        <members>Lead.Country__c</members>
+        <members>Lead.Owner_Since__c</members>
+        <members>Lead.Region__c</members>
+        <members>Lead.RegionalBlocs__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <!-- Validation Rules -->
+    <types>
+        <members>Lead.Prevent_Lead_Owner_Change</members>
+        <name>ValidationRule</name>
+    </types>
+
+    <!-- Flows -->
+    <types>
+        <members>Lead_Flow</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Custom Metadata Records -->
+    <types>
+        <members>External_API_Config__mdt.Country_API</members>
+        <name>CustomMetadata</name>
+    </types>
+
+    <!-- Custom Permissions -->
+    <types>
+        <members>Admin_No_Validation</members>
+        <members>Contract_Manager_No_Validation</members>
+        <name>CustomPermission</name>
+    </types>
+
+    <!-- Remote Site Settings -->
+    <types>
+        <members>CountryLayerAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    
+    <!-- Custom Tabs -->
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <!-- Permission Set -->
+    <types>
+    <members>PermissionSet_Development</members>
+    <name>PermissionSet</name>
+    </types>
+
+    <version>63.0</version>
+</Package>
